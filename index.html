@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Clock</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="util.css">
+
+</head>
+
+<body>
+
+    <div id="container">
+        <div id="alarm-clock">
+
+            <div id="screenContainer">
+
+                <!-- Box for hour -->
+                <div id="hourBox" class="boxes">
+                    <div class="boxContent">
+                        00
+                    </div>
+                </div>
+
+                <div class="separatorDots">
+
+                    <div class="dot1"></div>
+
+                    <div class="dot1"></div>
+
+                </div>
+
+                <!-- Box for minutes -->
+                <div id="minBox" class="boxes">
+                    <div class="boxContent">
+                        00
+                    </div>
+                </div>
+
+                <div class="separatorDots">
+
+                    <div class="dot1"></div>
+
+                    <div class="dot1"></div>
+
+                </div>
+
+                <!-- Box for seconds -->
+                <div id="secBox" class="boxes">
+                    <div class="boxContent">
+                        00
+                    </div>
+                </div>
+            </div>
+
+            <div id="setTimerContainer">
+                <input title="hours" class="usrInput" type="number" placeholder="8" value="0" min="00" max="99" >
+                <input title="minutes" class="usrInput" type="number" placeholder="8" value="0" min="00" max="60">
+                <input title="seconds" class="usrInput" type="number" placeholder="8" value="0" min="00" max="60">
+
+                <label title="Unlock and Lock" class="switch">
+                    <input id="checkbox" type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+
+
+            <div id="buttonsContainer">
+                <div title="play">
+                    <img id="play" class="unActive" src="icons8-play-48.png" alt="Play">
+                </div>
+
+
+                <div title="pause">
+                    <img id="pause" class="unActive" src="icons8-pause-48.png" alt="Pause">
+                </div>
+
+                <div title="restart">
+                    <img id="restart" class="unActive" src="icons8-restart-48.png" alt="Restart">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
